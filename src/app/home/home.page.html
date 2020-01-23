@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list lines="full">
     <ion-item-sliding>
       <ion-item-options side="start">
         <ion-item-option (click)="doSomething()">Favorite</ion-item-option>
@@ -15,7 +15,7 @@
       </ion-item-options>
 
       <ion-item (click)="doSomething()">
-        <ion-label>Item Options</ion-label>
+        <ion-label>Sliding Item Example</ion-label>
       </ion-item>
 
       <ion-item-options side="end">
@@ -24,7 +24,22 @@
         </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
-
-
   </ion-list>
+
+  <ion-list lines="full">
+    <form (ngSubmit) = "login()">
+    <ion-item>
+        <ion-input [(ngModel)]="eMail" name="mail" #mail type="email" placeholder="Email" class="input" autocomplete="eMail" required=true></ion-input>
+        </ion-item>
+    <ion-item>
+        <ion-input placeholder="Password" [(ngModel)]="password"  name="pw" #pw [type]="passwordType" class="input" autocomplete="password" required=true> </ion-input>
+            <ion-icon [name]="eye" (click)="showPassword()" class="eye"></ion-icon>
+    </ion-item>
+  </form>
+</ion-list>
+
+<div *ngIf="message" class="message">&nbsp;{{message}}</div>
+<p></p>
+<p><button class="nextButton" (click)="login()"> Next </button> </p>
+
 </ion-content>

@@ -1,1 +1,104 @@
 
+:host{
+    ion-toolbar {
+      --background: #005a5a;
+      --color: white;
+      font-family: "Ernest";
+      --min-height: 50px;
+    }
+    ion-title {
+      font-size: 200%;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    ion-back-button {
+      --color: white;
+      --background: #005a5a;
+    }
+    ion-item {
+      background: none !important;
+      outline: none !important;
+      -webkit-appearance: none !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    
+    h1 {
+      margin-top: 5%;
+      font-family: "Ernest";
+    }
+    .backButton {
+      margin-top: 3px;
+      color: white;
+      background: #005a5a;
+      font-size: 200%;
+      border: none;
+    }
+    .nextButton {
+      font-family: "OpenSans";
+      color: #ffffff;
+      font-size: 20px;
+      padding: 8px 19px;
+      -moz-border-radius: 22px;
+      -webkit-border-radius: 22px;
+      border-radius: 22px;
+      border: none;
+      background: #005a5a;
+    }
+    .centerContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .dontcenter {
+      justify-content: left;
+      align-content: left;
+      align-items: left;
+      text-align: left;
+    }
+    .skipButton {
+      border: none;
+      background-color: white;
+      text-decoration: underline;
+    }
+    .regButton {
+      border: none;
+      background-color: white;
+      text-decoration: underline;
+    }
+    .adv {
+      color: #005a5a;
+    }
+    .advantages {
+      padding: 2%;
+      font-family: "OpenSans";
+      font-size: 75%;
+      text-align: left;
+    }
+    .message {
+      color: red;
+      font-size: smaller;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .forgotButton {
+      text-decoration: underline;
+      font-size: 14px;
+      margin-top: 5%;
+    }
+    .eye {
+      color: #005a5a;
+    }
+    
+    .input {
+      background:none; 
+      outline: none; 
+      -webkit-appearance: none; 
+      box-shadow: none !important; 
+      border: none;
+    }
+    
+  }
+  
